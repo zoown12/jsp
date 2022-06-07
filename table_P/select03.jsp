@@ -30,11 +30,13 @@ if(!(rs.next())){
   out.println("============<수정:시작>==========");
 
 %>
-<form method="post" action="update.jsp">
+<form method="post" action="update01.jsp">
 <input type="hidden" value="<%=id1%>" name="id2"> <br>
 이름:<input type="text" value="<%=rs.getString(2) %>" name="name1"> <br>
 메일:<input type="text" value="<%=rs.getString(3) %>" name="mail"> <br>
+<input type ="submit" value="수정하기"><hr>
 
+<a href="delete01.jsp?id=<%=id1%>">삭제페이지</a><br>
 </form>
 
 <%
